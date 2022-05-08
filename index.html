@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<title>Document</title>
+</head>
+<body>
+	<main class='container-body'>
+		<div class='container-button'>
+			<div class='container-parser'>
+				<button id="parser" class='button-parser'>получить данные</button>
+				<input id="parserInput" type="text" class='input-parser' value="ipinfo.io/161.185.160.93/geo" placeholder="введите api, например: ipinfo.io/161.185.160.93/geo">
+			</div>
+			<div class='container-parser'>
+				<button id="createTable" class='button-parser'>создать таблицу</button>
+				<input id="createTableInput" type="text" class='input-create' placeholder="название таблицы">
+				<input id="createStringInput1" type="text" class='input-create' placeholder="название столбца">
+				<select id="createStringTypeOption1" class='select-create' size="1">
+					<option disabled>тип столбца</option>
+					<option value="int">int</option>
+					<option value="bit">bit</option>
+					<option value="money">money</option>
+					<option value="date">date</option>
+					<option value="datetime2">datetime2</option>
+					<option value="time">time</option>
+					<option value="char">char</option>
+					<option value="text">text</option>
+					<option value="varchar">varchar</option>
+					<option value="binary">binary</option>
+					<option value="image">image</option>
+					<option value="xml">xml</option>
+				</select>
+				<input id="createStringInput2" type="text" class='input-create' placeholder="название столбца">
+				<select id="createStringTypeOption2" class='select-create' size="1">
+					<option disabled>тип столбца</option>
+					<option value="int">int</option>
+					<option value="bit">bit</option>
+					<option value="money">money</option>
+					<option value="date">date</option>
+					<option value="datetime2">datetime2</option>
+					<option value="time">time</option>
+					<option value="char">char</option>
+					<option value="text">text</option>
+					<option value="varchar">varchar</option>
+					<option value="binary">binary</option>
+					<option value="image">image</option>
+					<option value="xml">xml</option>
+				</select>
+			</div>
+			<div class='container-parser'>
+				<button id="deleteTable" class='button-parser'>удалить таблицу</button>
+				<input id="deleteTableInput" type="text" class='input-parser' placeholder="введите назание таблицы">
+			</div>
+			<div class='container-parser'>
+				<button id="setValueColumnTable" class='button-parser'>добавить значение в столбцы</button>
+				<input id="setValueColumnTableInputTable" type="text" class='input-create' placeholder="название таблицы">
+				<input id="setValueColumnTableInputColumn" type="text" class='set-value' placeholder="столбец">
+				<input id="setValueColumnTableInputColumnValue" type="text" class='set-value' placeholder="значение">
+				<input id="setValueColumnTableInputColumn2" type="text" class='set-value' placeholder="столбец">
+				<input id="setValueColumnTableInputColumnValue2" type="text" class='set-value' placeholder="значение">
+			</div>
+			<div class='container-parser'>
+				<button id="getTableInfo" class='button-parser'>получить данные столбца таблицы</button>
+				<input id="getColumnInfoInput" type="text" class='input-create' placeholder="назание столбца">
+				<input id="getTableInfoInput" type="text" class='input-create' placeholder="назание таблицы">
+			</div>
+			<div class='container-parser'>
+				<button id="getColumnTable" class='button-parser'>добавить столбец в таблицу</button>
+				<input id="getTableInput" type="text" class='input-create' placeholder="назание таблицы">
+				<input id="getColumnInput" type="text" class='input-create' placeholder="назание столбец">
+				<select id="getStringTypeOption" class='select-create' size="1">
+					<option disabled>тип столбца</option>
+					<option value="int">int</option>
+					<option value="bit">bit</option>
+					<option value="money">money</option>
+					<option value="date">date</option>
+					<option value="datetime2">datetime2</option>
+					<option value="time">time</option>
+					<option value="char">char</option>
+					<option value="text">text</option>
+					<option value="varchar">varchar</option>
+					<option value="binary">binary</option>
+					<option value="image">image</option>
+					<option value="xml">xml</option>
+				</select>
+			</div>
+			<div class='container-parser'>
+				<button id="sortColumnTable" class='button-parser'>сортировка значений столбца</button>
+				<input id="sortTableInput" type="text" class='input-create' placeholder="назание таблицы">
+				<input id="sortColumnInput" type="text" class='input-create' placeholder="назание столбец">
+				<select id="sortStringTypeOption" class='select-create' size="1">
+					<option disabled>тип сортировки</option>
+					<option value="ORDER BY">ORDER BY</option>
+					<option value="DESC">DESC</option>
+				</select>
+			</div>
+			<div class='container-parser'>
+				<button id="deleteColumn" class='button-parser'>удалить столбец таблицы</button>
+				<input id="deleteColumnTableInput" type="text" class='input-create' placeholder="назание таблицы">
+				<input id="deleteColumnInput" type="text" class='input-create' placeholder="назание столбца">
+			</div>
+		</div>
+		<div class='container-replyProcessText'>
+			<div class='container-replyProcess'>
+				<div class='block-replyProcess'>
+					<div class='reply-process'>
+						<div class='reply-process_interior'></div>
+					</div>
+					<div class='text-replyProcess'>обработка запроса...</div>
+				</div>
+			</div>
+			<div class='container-text'></div>
+		</div>
+		
+		
+	</main>
+</body>
+<script src="script.js"></script>
+  
+</html>
